@@ -11,22 +11,25 @@ Static coming-soon page with a slow daylight → night transition that stays at 
 
 ## Local preview
 
-Just open `index.html` in a browser, or:
+Just open `index.html` in a browser (no Docker needed).
+
+For a local Docker test you can temporarily add `ports: ["8080:80"]` under the `web` service, then:
 
 ```bash
 docker compose up --build
 ```
 
-Then visit http://localhost
+and visit http://localhost:8080
 
 ## Deploy on Coolify (git push to main)
 
-1. Push this repo to your Git provider (main branch).
-2. In Coolify → New Resource → Docker Compose (or Dockerfile).
-3. Point it at the repo; Coolify will detect `docker-compose.yml` / `Dockerfile`.
-4. Set the domain and deploy. No env vars required.
+1. Push this repo to your Git provider (`main` branch).
+2. In Coolify → New Resource → **Docker Compose**.
+3. Point it at the repo; Coolify detects `docker-compose.yml`.
+4. Set your domain and deploy. No env vars required.
 
-The image serves on port 80. Coolify handles HTTPS / reverse proxy.
+The container **exposes** port 80 only — Coolify’s proxy maps the public domain.  
+Do **not** use `ports: - "80:80"` (that causes “port is already allocated”).
 
 ## Structure
 

@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Root-relative so Coolify / nginx always resolve correctly -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Root-relative + version query to bust caches on deploy -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260913-2">
 </head>
 <body>
   <main class="coming-soon" aria-label="safecorps.com.ng coming soon">
@@ -100,6 +100,6 @@
     </div>
   </main>
 
-  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/app.js?v=20260913-2"></script>
 </body>
 </html>
