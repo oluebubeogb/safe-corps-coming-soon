@@ -1,10 +1,11 @@
 services:
   web:
     build: .
-    ports:
-      - "80:80"
+    # Coolify injects its own reverse proxy / networking.
+    # Do NOT publish host ports here — that causes "port is already allocated".
+    expose:
+      - "80"
     restart: unless-stopped
-    # Coolify will inject its own networking; this works for local & Coolify
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
       interval: 30s
