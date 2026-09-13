@@ -95,49 +95,49 @@ body {
 
 .line-field .l {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.28);
-  stroke-width: 1.25;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 1;
   stroke-linecap: round;
-  stroke-dasharray: 120;
-  stroke-dashoffset: 0;
-  opacity: 0.65;
-  animation: lineDraw 8s ease-in-out infinite;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  opacity: 0.4;
+  animation: lineFlow 9s ease-in-out infinite;
 }
 
 .line-field .l:nth-child(odd) {
-  animation-duration: 10s;
-  animation-delay: -1.5s;
-  stroke: rgba(255, 255, 255, 0.22);
+  animation-duration: 11s;
+  animation-delay: -2s;
+  stroke: rgba(255, 255, 255, 0.09);
 }
 
 .line-field .l:nth-child(3n) {
-  animation-duration: 7s;
-  animation-delay: -3s;
-  stroke: rgba(26, 122, 66, 0.55);
-  stroke-dasharray: 90;
+  animation-duration: 8s;
+  animation-delay: -3.5s;
+  stroke: rgba(26, 122, 66, 0.22);
+  stroke-dasharray: 110;
 }
 
 .line-field .l:nth-child(4n) {
-  stroke: rgba(201, 162, 39, 0.4);
-  animation-duration: 11s;
-  animation-delay: -2s;
-  stroke-dasharray: 100;
+  stroke: rgba(201, 162, 39, 0.16);
+  animation-duration: 12s;
+  animation-delay: -1.5s;
+  stroke-dasharray: 120;
 }
 
 .line-field .n {
-  fill: rgba(255, 255, 255, 0.55);
-  opacity: 0.6;
-  animation: nodeGlow 5s ease-in-out infinite;
+  fill: rgba(255, 255, 255, 0.28);
+  opacity: 0.35;
+  animation: nodeGlow 6s ease-in-out infinite;
 }
 
 .line-field .n:nth-child(odd) {
-  animation-delay: 1s;
-  fill: rgba(201, 162, 39, 0.65);
+  animation-delay: 1.2s;
+  fill: rgba(201, 162, 39, 0.3);
 }
 
 .line-field .n:nth-child(3n) {
   animation-delay: 2s;
-  fill: rgba(26, 122, 66, 0.7);
+  fill: rgba(26, 122, 66, 0.28);
 }
 
 /* ---------- Content (~30% footprint, no outer box) ---------- */
@@ -244,8 +244,9 @@ body {
   border: 1px solid rgba(26, 122, 66, 0.45);
 }
 .feature:nth-child(2) .card {
-  background: rgba(8, 61, 31, 0.38);
-  border: 1px solid rgba(26, 122, 66, 0.4);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  color: #0d5c2e;
 }
 .feature:nth-child(3) .card {
   background: rgba(26, 122, 66, 0.28);
@@ -266,8 +267,9 @@ body {
   border-color: rgba(26, 122, 66, 0.7);
 }
 .feature:nth-child(2) .card:hover {
-  background: rgba(8, 61, 31, 0.6);
-  border-color: rgba(26, 122, 66, 0.65);
+  background: #fff;
+  border-color: rgba(26, 122, 66, 0.45);
+  color: #0d5c2e;
 }
 .feature:nth-child(3) .card:hover {
   background: rgba(26, 122, 66, 0.5);
@@ -290,7 +292,10 @@ body {
 }
 
 .feature:nth-child(1) .card .icon { background: rgba(26, 122, 66, 0.45); }
-.feature:nth-child(2) .card .icon { background: rgba(13, 92, 46, 0.5); }
+.feature:nth-child(2) .card .icon {
+  background: rgba(13, 92, 46, 0.15);
+  color: #0d5c2e;
+}
 .feature:nth-child(3) .card .icon { background: rgba(26, 122, 66, 0.4); }
 .feature:nth-child(4) .card .icon { background: rgba(201, 162, 39, 0.4); color: #f5f0e0; }
 
@@ -300,7 +305,10 @@ body {
 }
 
 .feature:nth-child(1) .card:hover .icon { background: rgba(26, 122, 66, 0.75); }
-.feature:nth-child(2) .card:hover .icon { background: rgba(13, 92, 46, 0.8); }
+.feature:nth-child(2) .card:hover .icon {
+  background: rgba(13, 92, 46, 0.25);
+  color: #0d5c2e;
+}
 .feature:nth-child(3) .card:hover .icon { background: rgba(26, 122, 66, 0.7); }
 .feature:nth-child(4) .card:hover .icon { background: rgba(201, 162, 39, 0.65); }
 
@@ -356,29 +364,29 @@ body {
   100% { opacity: 1; }
 }
 
-/* Visible continuous draw / pulse on lines */
-@keyframes lineDraw {
+/* Flow bottom-left → upper-right (faint) */
+@keyframes lineFlow {
   0% {
-    stroke-dashoffset: 120;
-    opacity: 0.25;
+    stroke-dashoffset: 140;
+    opacity: 0.12;
   }
-  40% {
+  35% {
     stroke-dashoffset: 0;
-    opacity: 0.85;
+    opacity: 0.38;
   }
   70% {
-    stroke-dashoffset: -40;
-    opacity: 0.55;
+    stroke-dashoffset: -50;
+    opacity: 0.22;
   }
   100% {
-    stroke-dashoffset: -120;
-    opacity: 0.3;
+    stroke-dashoffset: -140;
+    opacity: 0.1;
   }
 }
 
 @keyframes nodeGlow {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 1; }
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.55; }
 }
 
 /* ---------- Mobile ---------- */
