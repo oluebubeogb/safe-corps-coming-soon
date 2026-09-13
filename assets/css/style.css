@@ -244,9 +244,9 @@ body {
   border: 1px solid rgba(26, 122, 66, 0.45);
 }
 .feature:nth-child(2) .card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  color: #0d5c2e;
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #e8f5ec;
 }
 .feature:nth-child(3) .card {
   background: rgba(26, 122, 66, 0.28);
@@ -267,9 +267,9 @@ body {
   border-color: rgba(26, 122, 66, 0.7);
 }
 .feature:nth-child(2) .card:hover {
-  background: #fff;
-  border-color: rgba(26, 122, 66, 0.45);
-  color: #0d5c2e;
+  background: rgba(255, 255, 255, 0.42);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
 }
 .feature:nth-child(3) .card:hover {
   background: rgba(26, 122, 66, 0.5);
@@ -293,8 +293,8 @@ body {
 
 .feature:nth-child(1) .card .icon { background: rgba(26, 122, 66, 0.45); }
 .feature:nth-child(2) .card .icon {
-  background: rgba(13, 92, 46, 0.15);
-  color: #0d5c2e;
+  background: rgba(255, 255, 255, 0.2);
+  color: #e8f5ec;
 }
 .feature:nth-child(3) .card .icon { background: rgba(26, 122, 66, 0.4); }
 .feature:nth-child(4) .card .icon { background: rgba(201, 162, 39, 0.4); color: #f5f0e0; }
@@ -306,8 +306,8 @@ body {
 
 .feature:nth-child(1) .card:hover .icon { background: rgba(26, 122, 66, 0.75); }
 .feature:nth-child(2) .card:hover .icon {
-  background: rgba(13, 92, 46, 0.25);
-  color: #0d5c2e;
+  background: rgba(255, 255, 255, 0.35);
+  color: #fff;
 }
 .feature:nth-child(3) .card:hover .icon { background: rgba(26, 122, 66, 0.7); }
 .feature:nth-child(4) .card:hover .icon { background: rgba(201, 162, 39, 0.65); }
