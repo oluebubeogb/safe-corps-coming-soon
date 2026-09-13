@@ -1,0 +1,12 @@
+.git
+.gitignore
+README.txt
+README.md
+*.md
+.DS_Store
+Thumbs.db
+desktop.zip
+*.zip
+.env
+.env.*
+node_modules
