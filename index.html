@@ -3,67 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#081a3a">
-  <meta name="description" content="safecorps.ng — Building a platform to support, connect and empower corpers and communities across Nigeria.">
-  <title>safecorps.ng — A safer tomorrow is on the way</title>
+  <meta name="theme-color" content="#0a1f14">
+  <meta name="description" content="safecorps.com.ng — Building a platform to support, connect and empower corpers and communities across Nigeria.">
+  <title>safecorps.com.ng — A safer tomorrow is on the way</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main class="coming-soon" aria-label="safecorps.ng coming soon">
+  <main class="coming-soon" aria-label="safecorps.com.ng coming soon">
     <div class="scene scene-day" aria-hidden="true"></div>
     <div class="scene scene-night" aria-hidden="true"></div>
     <div class="shade" aria-hidden="true"></div>
 
-    <!-- Subtle continuous abstract line field -->
+    <!-- Abstract line field — continuous, visible -->
     <div class="lines" aria-hidden="true">
-      <svg class="line-field" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <line class="l" x1="5" y1="12" x2="28" y2="38"/>
-        <line class="l" x1="72" y1="8" x2="95" y2="32"/>
-        <line class="l" x1="18" y1="55" x2="42" y2="78"/>
-        <line class="l" x1="58" y1="48" x2="88" y2="72"/>
-        <line class="l" x1="8" y1="82" x2="35" y2="95"/>
-        <line class="l" x1="62" y1="18" x2="78" y2="42"/>
-        <line class="l" x1="40" y1="22" x2="55" y2="48"/>
-        <line class="l" x1="22" y1="30" x2="48" y2="18"/>
-        <line class="l" x1="80" y1="55" x2="96" y2="80"/>
-        <line class="l" x1="12" y1="68" x2="30" y2="48"/>
+      <svg class="line-field" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <g class="line-group">
+          <line class="l l1" x1="80" y1="120" x2="320" y2="280"/>
+          <line class="l l2" x1="900" y1="80" x2="1120" y2="260"/>
+          <line class="l l3" x1="180" y1="420" x2="420" y2="620"/>
+          <line class="l l4" x1="680" y1="380" x2="980" y2="560"/>
+          <line class="l l5" x1="60" y1="650" x2="340" y2="760"/>
+          <line class="l l6" x1="720" y1="140" x2="920" y2="340"/>
+          <line class="l l7" x1="480" y1="160" x2="620" y2="380"/>
+          <line class="l l8" x1="240" y1="220" x2="520" y2="140"/>
+          <line class="l l9" x1="980" y1="420" x2="1140" y2="640"/>
+          <line class="l l10" x1="140" y1="520" x2="360" y2="380"/>
+          <line class="l l11" x1="540" y1="500" x2="780" y2="680"/>
+          <line class="l l12" x1="820" y1="200" x2="1040" y2="120"/>
+        </g>
+        <g class="nodes">
+          <circle class="n" cx="80" cy="120" r="2.5"/>
+          <circle class="n" cx="320" cy="280" r="2"/>
+          <circle class="n" cx="900" cy="80" r="2.5"/>
+          <circle class="n" cx="1120" cy="260" r="2"/>
+          <circle class="n" cx="180" cy="420" r="2"/>
+          <circle class="n" cx="420" cy="620" r="2.5"/>
+          <circle class="n" cx="680" cy="380" r="2"/>
+          <circle class="n" cx="980" cy="560" r="2.5"/>
+          <circle class="n" cx="60" cy="650" r="2"/>
+          <circle class="n" cx="340" cy="760" r="2"/>
+          <circle class="n" cx="720" cy="140" r="2"/>
+          <circle class="n" cx="920" cy="340" r="2.5"/>
+        </g>
       </svg>
     </div>
 
     <div class="content">
-      <div class="brand">
-        <span class="brand-mark">safecorps.ng</span>
+      <div class="panel">
+        <div class="brand">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-mark">safecorps.com.ng</span>
+        </div>
+
+        <h1 class="headline">
+          <span class="line">A safer tomorrow</span>
+          <span class="line">is on the way.</span>
+        </h1>
+
+        <p class="lead">
+          We’re building a platform to support, connect and empower
+          corpers and communities across Nigeria.
+        </p>
+
+        <ul class="features" role="list">
+          <li class="feature">
+            <div class="card">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+              <span class="label">Safety Support</span>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="card">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+              <span class="label">Corper Connect</span>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="card">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="label">Community Impact</span>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="card">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+              <span class="label">Growth Opportunities</span>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <h1 class="headline">A safer tomorrow is on the way.</h1>
-      <p class="lead">
-        We’re building a platform to support,<br>
-        connect and empower corpers and<br>
-        communities across Nigeria.
-      </p>
-
-      <ul class="features" role="list">
-        <li class="feature">
-          <span class="icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
-          <span class="label">Safety Support</span>
-        </li>
-        <li class="feature">
-          <span class="icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
-          <span class="label">Corper Connect</span>
-        </li>
-        <li class="feature">
-          <span class="icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
-          <span class="label">Community Impact</span>
-        </li>
-        <li class="feature">
-          <span class="icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
-          <span class="label">Growth Opportunities</span>
-        </li>
-      </ul>
     </div>
   </main>
 
