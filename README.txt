@@ -24,4 +24,4 @@ Behavior:
 - Text remains minimal and centered.
 - prefers-reduced-motion disables the animation for accessibility.
 
-No server-side code is required.
+No server-side code is required. And that is the fun part...
